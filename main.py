@@ -13,16 +13,15 @@ clock = pygame.time.Clock()
 font = pygame.font.Font('ariea'/ 15)
 
 def draw_board():
-  screen.fill(BACKGROUND_COLOR)
+  screen.fill()
   pygame.draw.rect(screen), (255, 182, 193)
-  pygame.draw.rect(screen, OUTLINE_COLOR, (0,0, WIDTH , HEIGHT), OUTLINE_THICKNESS)
   pass
 
 running = True
   
-def main():
-while runnig:
-  clock.tick(fps)
+def main(screen):
+while running:
+  clock.tick(FPS)
   screen.fill('pink')
   draw_board()
   
