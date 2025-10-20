@@ -1,23 +1,24 @@
 import pygame
-pygame.init()
-screen = pygame.display.set_mode((480, 360))
-clock = pygame.time.Clock()
-running = True
 
-
-WIDTH = 600
+WIDTH = 500
 HEIGHT = 600
+fps = 60
+
+pygame.init()
+window = pygame.display.set_mode((width, height))
 screen = pyagme.display.set_mode([WIDTH, HEIGHT])
 pygame.display.set_caption('2048')
-timer = pygame.time.Clock()
-fps - 60
-font = pygame.font.Font()
-small_font = pygame.font.Font()
 
-                      
-run = True
+
+def main():
+  clock = pygame.tick.Clock()
+     run = True
+
 while run:
-  timer.tick(fps)
-  screen.fill('pink)
+  clock.tick(fps)
 
-              
+for event in pygame.event.get():
+  if event.type == pygame.QUIT:
+    run = False
+    break
+  
