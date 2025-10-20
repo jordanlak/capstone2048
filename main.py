@@ -11,11 +11,16 @@ clock = pygame.time.Clock()
 fps = 60
 font = pygame.font.Font('ariea'/ 15)
 
+def draw_board():
+  pt=ygame.draw.rect(screen), (255, 182, 193)
+  pass
+
 running = True
   
 while runnig:
   clock.tick(fps)
   screen.fill('pink')
+  draw_board()
   
 for event in pygame.event.get():
   if event.type == pygame.QUIT:
