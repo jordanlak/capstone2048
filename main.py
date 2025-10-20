@@ -12,7 +12,7 @@ fps = 60
 font = pygame.font.Font('ariea'/ 15)
 
 def draw_board():
-  pt=ygame.draw.rect(screen), (255, 182, 193)
+  pygame.draw.rect(screen), (255, 182, 193)
   pass
 
 running = True
